@@ -72,13 +72,14 @@ erDiagram
         int deposito_id FK
         string estado_general
     }
-    REMITO_ITEMS {
-        int id PK
-        int remito_id FK
-        int producto_id FK
-        int cantidad
-        string unidad
-    }
+   REMITO_ITEMS {
+    int id PK
+    int remito_id FK
+    int producto_id FK
+    int cantidad
+    string unidad
+    string numero_lote
+}
     VALIDACIONES_CALIDAD {
         int id PK
         int remito_id FK
