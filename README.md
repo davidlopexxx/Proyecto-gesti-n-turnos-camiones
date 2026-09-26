@@ -68,3 +68,14 @@ El proyecto aborda el proceso de ingreso y egreso de camiones en una fábrica de
 - **Temporal (riesgo bajo-medio):** con un compromiso estimado de 10 horas semanales por integrante (20 horas semanales de equipo), y considerando las 7 semanas entre el 27/09 y el 14/11, el equipo dispone de aproximadamente 140 horas para el desarrollo. Es un margen ajustado pero razonable si se prioriza el núcleo del sistema (turnos, acceso y validación de calidad) antes que los módulos complementarios.
 
 **Uso de IA:** se utilizó como herramienta para explorar casos borde del proceso relevado (por ejemplo, qué ocurre si el depósito no tiene lugar disponible) y para revisar la consistencia del flujo, pero las decisiones de alcance y arquitectura fueron discutidas y definidas por el equipo.
+
+
+
+---
+
+## Estructura del repositorio
+
+- `/backend` — API REST (Python + FastAPI + SQLModel)
+- `/frontend` — Aplicación web (React + TypeScript)
+- `/database` — Esquema de base de datos (`schema.md`)
+- `/docs` — Documentación del proyecto: listado de módulos y arquitectura
