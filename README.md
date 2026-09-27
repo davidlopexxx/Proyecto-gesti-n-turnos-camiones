@@ -77,5 +77,5 @@ El proyecto aborda el proceso de ingreso y egreso de camiones en una fábrica de
 
 - `/backend` — API REST (Python + FastAPI + SQLModel)
 - `/frontend` — Aplicación web (React + TypeScript)
-- `/database` — Esquema de base de datos (`schema.md`)
+- `/database` — Esquema de base de datos (`schema.md`) y script de creación de tablas (`schema.sql`)
 - `/docs` — Documentación del proyecto: listado de módulos y arquitectura
