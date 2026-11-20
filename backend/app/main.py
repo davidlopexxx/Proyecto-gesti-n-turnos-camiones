@@ -7,7 +7,7 @@ from sqlalchemy.exc import IntegrityError
 
 from app.core.config import settings
 from app.core.db import create_db_and_tables
-from app.routers import auth
+from app.routers import auth, catalogos, turnos, usuarios
 
 
 @asynccontextmanager
@@ -46,6 +46,13 @@ async def integrity_error_handler(_: Request, exc: IntegrityError):
 
 
 app.include_router(auth.router)
+app.include_router(usuarios.router)
+app.include_router(catalogos.proveedores)
+app.include_router(catalogos.productos)
+app.include_router(catalogos.depositos)
+app.include_router(catalogos.choferes)
+app.include_router(catalogos.camiones)
+app.include_router(turnos.router)
 
 
 @app.get("/health", tags=["Sistema"])
